@@ -41,3 +41,19 @@ h1 {
   80%  { transform: translate(20px, 20px); }
   100% { transform: translate(0px, 0px); }
 }
+
+.side-img {
+  position: fixed;
+  width: 400px;
+  height: auto;
+  transition: transform 0.4s;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.left-img { left: 10px; }
+.right-img { right: 10px; }
+
+.left1, .right1 { top: 0%; }
+.left2, .right2 { top: 30%; }
+.left3, .right3 { top: 60%; }

@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    background-color: antiquewhite;
+    font-size: 30px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 100px;
+}
+
+h1 {
+    position: absolute;
+    font-size: 50px;
+    top: 0;
+    left: 0;
+    margin: 2em 1em 0 0.5em;
+    transform: rotate(-10deg);
+    text-align: left;
+}
+
+#screen {
+  transition: transform 0.1s;
+}
+
+.shake {
+  animation: shake 0.2s;
+}
+
+@keyframes shake {
+  0%   { transform: translate(0px, 0px); }
+  20%  { transform: translate(-10px, -10px); }
+  40%  { transform: translate(10px, 10px); }
+  60%  { transform: translate(-30px, -30px); }
+  80%  { transform: translate(20px, 20px); }
+  100% { transform: translate(0px, 0px); }
+}
